@@ -2,6 +2,8 @@
 
 The Prometheus server is configured to run in agent mode in order to allocate the least amount of resources from the cluster. Thereby, it acts as a forwarder as long as the remote backend endpoint is available. If not, it stores the scraped metrics for a while and then drops.
 
+An example bash script to deploy the Helm chartcan be found [here](../../scripts/01_deploy_prometheus_helm_chart.sh).
+
 ## Scraping parameters
 
 By default, a `ClusterRole` is assigned which basically lets Prometheus scrape everything possible. If you are interested in only some metrics, applying `keep` or `drop` rules still does not change the fact of Prometheus scraping everything first and applying the regex afterwards. Of course, this represents an unnecessary memory usage and therefore is costly.
