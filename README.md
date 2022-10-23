@@ -18,4 +18,8 @@ This repo is meant to satisfy such common use cases with genericly configurable 
 
 ## Chart configuration
 
-How to set the variables for different use cases can be found here: [Chart configuration](charts/prometheus/README.md)
+How to set the variables for different use cases can be found here: [Chart configuration](charts/prometheus/README.md).
+
+## Instant observability
+
+In order to monitor metrics in context right after your Prometheus deployment, you can refer to the [Terraform deployment](newrelic/terraform/README.md).
